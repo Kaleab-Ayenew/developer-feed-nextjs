@@ -1,38 +1,41 @@
-import styles from "../styles/Home.module.css";
-
-import googleImg from "../assets/google.jpg";
-
+import styles from "../styles/Card.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 function Card(props) {
+  function imgLoader() {
+    return props.imgLink;
+  }
+
   return (
     <div className={styles.card}>
-      <Image
-        src={googleImg}
-        width={230}
-        height={230}
-        className={styles.mainImg}
-        priority
-      />
+      <Link href={props.link}>
+        <Image
+          src={props.imgLink}
+          loader={imgLoader}
+          width={230}
+          height={230}
+          className={styles.mainImg}
+          priority
+          alt="Main Image"
+        />
+      </Link>
+
       <h2 className={styles.cardTitle}>
-        Why the Google layoffs are about personal ambition and poor leadership
+        <Link href={props.link}>{props.title}</Link>
       </h2>
       <div className={styles.authorBox}>
         <Image
-          src={
-            "https://miro.medium.com/fit/c/96/96/2*2VNiy9rN5BcvIzACfCmSww.jpeg"
-          }
+          alt="Author Image"
           width={67}
           height={67}
           className={styles.authorImage}
+          src={props.imgLink}
+          loader={imgLoader}
         />
-        <span className={styles.authorName}>John Doe</span>
+        <span className={styles.authorName}>{props.creator}</span>
       </div>
-      <p className={styles.ptext}>
-        Recently, Google announced it was laying off approximately 6% of its
-        workforce (or 12,000 people). This brings it in line with most of the
-        rest of the tech industry.
-      </p>
+      <p className={styles.ptext}>{props.contentSnippet}</p>
       <span className={styles.footer}>Medium.com</span>
     </div>
   );
