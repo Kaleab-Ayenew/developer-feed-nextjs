@@ -23,6 +23,9 @@ export default function Home({ feeds }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NextSeo
+        twitter={{
+          cardType: "summary_large_image",
+        }}
         openGraph={{
           title: "Developer Feeds",
           description: "We are Developer Feeds! We feed news for Devs!!",
