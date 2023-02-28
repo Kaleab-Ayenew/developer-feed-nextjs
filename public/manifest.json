@@ -1,0 +1,33 @@
+{
+  "background_color": "#ffffff",
+  "description": "A developer news feed that fetches latest, trending news from medium.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Developer Feeds",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Dev Feeds",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "education",
+    "news"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "/favicon.ico"
+    },
+    {
+      "src": "/assets/main-logo.png",
+      "type": "image/png",
+      "sizes": "1168x934"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [],
+  "prefer_related_applications": false
+}
