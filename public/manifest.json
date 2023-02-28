@@ -16,7 +16,7 @@
   "screenshots": [],
   "icons": [
     {
-      "src": "/favicon.ico"
+      "src": "/favicon.png"
     },
     {
       "src": "/assets/main-logo.png",
@@ -24,8 +24,8 @@
       "sizes": "1168x934"
     },
     {
-      "src": "/favicon.ico",
-      "type": "image/x-icon"
+      "src": "/favicon.png",
+      "type": "image/png"
     }
   ],
   "shortcuts": [],
