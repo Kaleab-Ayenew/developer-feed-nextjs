@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "app.vercel.developer_feed_nextjs.twa",
+                     "sha256_cert_fingerprints": ["3F:FA:02:E0:D8:9A:6D:7B:B5:9E:45:65:E8:81:1C:E1:D9:F0:70:39:B2:4E:6F:BC:EB:43:08:EF:5E:62:90:A7"] }
+      }
+]
